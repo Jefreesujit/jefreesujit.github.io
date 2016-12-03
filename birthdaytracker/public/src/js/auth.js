@@ -1,6 +1,6 @@
 var config = {
   apiKey: "AIzaSyC5iA98uKjVsIQfYR6yjGHJxX9ogX9wLUI",
-  authDomain: "http://jefreesujit.github.io/birthdaytracker/public/",
+  authDomain: "jefreesujit.github.io",
   databaseURL: "https://birthday-tracker-c31a3.firebaseio.com",
   messagingSenderId: "996953243377"
 };
