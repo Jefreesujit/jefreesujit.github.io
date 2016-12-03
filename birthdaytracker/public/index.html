@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Brithday Tracker</title>
+    <meta name="description" content="Brithday Tracker" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="src/css/icon.css">
+    <link rel="stylesheet" href="src/css/materialize.min.css">
+    <link rel="stylesheet" href="src/css/main.css" type="text/css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="row">
+        <div class="logo-icon">
+        </div>
+        <div class="page-header">
+          Birthday Tracker
+        </div>
+      </div>
+    </header>
+    <main id="body">
+      <div class="row">
+      <div class="page-container">
+        <div class="left-pane">
+          <div class="col s12">
+            <h5 class="light">Enter Personal Details</h5>
+          </div>
+          <div class="input-field col s12">
+            <input id="first_name" type="text" pattern="[A-Za-z]{4,}" class="validate" title="Enter a valid name" required>
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="last_name" type="text" pattern="[A-Za-z]{4,}" class="validate" title="Enter a valid name" required>
+            <label for="last_name">Last Name</label>
+          </div>
+          <p class="col s6">
+            <input name="gender" type="radio" id="Male" value="Male" checked />
+            <label for="Male">Male</label>
+          </p>
+          <p class="col s6">
+            <input name="gender" type="radio" id="Female" value="Female" />
+            <label for="Female">Female</label>
+          </p>
+          <div class="col s12">
+            <label for="birthdate" class="">Birthdate</label>
+            <input type="date" id="dob" pattern="[A-Za-z0-9]{10,}" id="birthdate" class="datepicker" title="Enter a valid date " required />
+          </div>
+          <div class="save-btn col s12">
+            <a id="save_btn" class="waves-effect waves-light btn">Save Details</a>
+          </div>
+        </div>
+        <div class="right-pane">
+          <div class="pane-title col s12">
+            <h5 class="light">Month For Birthday</h5>
+          </div>
+          <div class="input-field col s12">
+            <select id="month_list" required>
+              <option value="" disabled selected>Choose your option</option>
+              <option value=0 selected>January</option>
+              <option value=1>February</option>
+              <option value=2>March</option>
+              <option value=3>April</option>
+              <option value=4>May</option>
+              <option value=5>June</option>
+              <option value=6>July</option>
+              <option value=7>August</option>
+              <option value=8>September</option>
+              <option value=9>October</option>
+              <option value=10>November</option>
+              <option value=11>December</option>
+            </select>
+            <label>Birthday Month</label>
+          </div>
+          <div id="birthday_list" class="birthday-list col s12">
+          </div> 
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        Copyrights © 2016 Jefree Sujit, All rights reserved.
+      </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script type="text/javascript" src="src/js/auth.js"></script>
+    <script type="text/javascript" src="src/js/jquery-2.1.1.min.js"></script>
+    <script src="src/js/materialize.min.js"></script>
+    <script type="text/javascript" src="src/js/main.js"></script>
+  </body>
+</html>
