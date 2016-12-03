@@ -1,8 +1,7 @@
 var config = {
   apiKey: "AIzaSyC5iA98uKjVsIQfYR6yjGHJxX9ogX9wLUI",
-  authDomain: "birthday-tracker-c31a3.firebaseapp.com",
+  authDomain: "http://jefreesujit.github.io/birthdaytracker/public/",
   databaseURL: "https://birthday-tracker-c31a3.firebaseio.com",
-  storageBucket: "birthday-tracker-c31a3.appspot.com",
   messagingSenderId: "996953243377"
 };
 firebase.initializeApp(config);
