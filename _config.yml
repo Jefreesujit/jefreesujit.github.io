@@ -1,0 +1,8 @@
+title: Jefreesujit.github.io
+description: Personal GitHub Repository
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
