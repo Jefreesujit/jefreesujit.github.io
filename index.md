@@ -9,8 +9,8 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 
 * A cloud-based web application, that allows you to store, retrieve and manage files over the cloud.
 * Node based application built using Express.js server
-* End to End AWS Based Application, Uses AWS Services for deployments too.
-* Designed with Material Concept with HTML5, CSS3, JQuery
+* End to End AWS Based Application, Uses AWS services for development and deployment purposes.
+* Designed with Material Concept using HTML5, CSS3 and JQuery
 * Application uses amazon-cognito, amazon-s3, aws-dynamodb, elastic-beanstalk, aws-lambda
 * Internally uses code-deploy, code-commit, code-build, certificate-manager, VPC
 
