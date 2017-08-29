@@ -58,9 +58,6 @@ and few other internal services like VPC, IAM, Certificate manager, etc.. to pro
   - Renaming the files
   - Bulk Download
 
-***Drive It*** is designed and built by [*Jefree Sujit*](http://jefreesjit.github.io).
-
-
 
 [**Chatter Box**](https://mychatterbox.herokuapp.com/)
 
