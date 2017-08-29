@@ -30,3 +30,11 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 * Designed with Material Concept
 * Uses Socket.io for message transfer
 
+[**Drive It**](https://driveit.us-west-2.elasticbeanstalk.com/)
+
+* A cloud-based web application, that allows you to store, retrieve and manage files over the cloud.
+* Node based application built using Express.js server
+* End to End AWS Based Application, Uses AWS Services for deployments too.
+* Designed with Material Concept with HTML5, CSS3, JQuery
+* Application uses amazon-cognito, amazon-s3, aws-dynamodb, elastic-beanstalk, aws-lambda
+* Internally uses code-deploy, code-commit, code-build, certificate-manager, VPC
