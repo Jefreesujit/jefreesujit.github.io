@@ -3,7 +3,8 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 
 ----
 
-# Check out my works
+# Recent Works
+
 
 [**Drive It**](https://driveit.us-west-2.elasticbeanstalk.com)
 
@@ -24,7 +25,6 @@ With a User friendly Interface,
 - Built with the ideology of 'One page One action'
 - Allows Drag and drop file upload
 - Supports multiple uploads at the same time
-- Impressive rendering of your files collection
 - *One click Download* option
 
 ### Tech Involved
@@ -54,9 +54,12 @@ and few other internal services like VPC, IAM, Certificate manager, etc.. to pro
 
 ### Upcoming Features!
   - New User friendly Interface
-  - Creating a folder
+  - Creating folders
   - Renaming the files
   - Bulk Download
+
+
+# Check out my other works 
 
 
 [**Chatter Box**](https://mychatterbox.herokuapp.com/)
