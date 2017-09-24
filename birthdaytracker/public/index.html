@@ -12,13 +12,21 @@
   <body>
     <header id="header">
       <div class="row">
-        <div class="logo-icon">
-        </div>
         <div class="page-header">
           Birthday Tracker
         </div>
       </div>
     </header>
+    <div id="modalOverlay" class="modal-overlay hide">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          Please sign in to authenticate
+        </div>
+       <div class="signin-btn col s12">
+          <a id="signin_btn" onclick="signInUser()" class="waves-effect waves-light btn">Sign In</a>
+        </div>
+      </div>
+    </div>
     <main id="body">
       <div class="row">
       <div class="page-container">

@@ -18,24 +18,37 @@ function start() {
 
       if (currentUser != null) {
         currentUser.providerData.forEach(function (profile) {
-          console.log("Sign-in provider: "+profile.providerId);
-          console.log("  Provider-specific UID: "+profile.uid);
-          console.log("  Name: "+profile.displayName);
-          console.log("  Email: "+profile.email);
-          console.log("  Photo URL: "+profile.photoURL);
+          sessionStorage.setItem('userData', JSON.stringify(profile));
+          getUserDetails(profile);
         });
       }
     } else if (firstTime) {
       console.log('unauthorized change');
       firstTime = false;
-      var provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithRedirect(provider);
-      firebase.auth().getRedirectResult().then(function(result) {
-        var token = result.credential.accessToken;
-        currentUser = result.user;
-        console.log(token);
-      });
+      $('#modalOverlay').removeClass('hide');
     }
+  });
+}
+
+function getUserDetails (profile) {
+  var userRef = firebase.database().ref(profile.uid),
+      userDataRef = firebase.database().ref(profile.uid + '/userData/');
+
+  userRef.once('value', function(snapshot) {
+    if (snapshot.hasChild('userData')) {
+      console.log('userdata already exists');
+    } else {
+      userDataRef.push(profile);
+    }
+  });
+}
+
+function signInUser () {
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithRedirect(provider);
+  firebase.auth().getRedirectResult().then(function(result) {
+    var token = result.credential.accessToken;
+    currentUser = result.user;
   });
 }
 
@@ -48,4 +61,4 @@ function signOut () {
 };
 
 window.onload = start;
-window.onunload = signOut;
+// window.onunload = signOut;

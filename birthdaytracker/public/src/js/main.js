@@ -11,10 +11,10 @@ function guid() {
 }
 
 function getFormValues () {
-  let firstname = $('#first_name').val(),
-    lastname = $('#last_name').val(),
-    gender = $('input[name="gender"]:checked').val(),
-    dateofbirth = $('#dob').val();
+  var firstname = $('#first_name').val(),
+      lastname = $('#last_name').val(),
+      gender = $('input[name="gender"]:checked').val(),
+      dateofbirth = $('#dob').val();
 
   return {
     id: guid(),
@@ -23,6 +23,11 @@ function getFormValues () {
     gender: gender,
     dateOfBirth: dateofbirth
   }
+}
+
+function getUserDirectory () {
+  var userData = JSON.parse(sessionStorage.getItem('userData'));
+  return userData.uid + '/birthdayList/';
 }
 
 function resetFormValues () {
@@ -34,7 +39,8 @@ function resetFormValues () {
 
 function saveBirthdayDetails () {
   var formDetails = getFormValues(),
-      birthdayListRef = firebase.database().ref("githubBirthdayList/");
+      userDirectory = getUserDirectory(),
+      birthdayListRef = firebase.database().ref(userDirectory);
 
   shouldUpdateList = false;
   birthdayListRef.push(formDetails);
@@ -43,7 +49,8 @@ function saveBirthdayDetails () {
 
 function retrieveBirthdayList () {
   shouldUpdateList = true;
-  let ref = firebase.database().ref('githubBirthdayList/'),
+  var userDirectory = getUserDirectory(),
+      ref = firebase.database().ref(userDirectory),
       month = parseInt($('#month_list').val()),
       BirthdayList = [],
       modifiedList = [],
@@ -72,7 +79,7 @@ function retrieveBirthdayList () {
 }
 
 function displayList(List) {
-  let i,
+  var i,
       displayCards = '',
       displayHTML = '';
 
@@ -98,8 +105,6 @@ $(document).ready(function() {
       max: date
     });
 
-    retrieveBirthdayList();
-
     $('#save_btn').on('click', function(e) {
       e.preventDefault();
       saveBirthdayDetails();
@@ -110,5 +115,3 @@ $(document).ready(function() {
       retrieveBirthdayList();
     });
 });
-
-
