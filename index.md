@@ -8,7 +8,7 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 
 [**Drive It**](https://driveit.us-west-2.elasticbeanstalk.com)
 
-***Drive It*** is a cloud-based web application, that allows you to store, retrieve and manage files over the cloud. *Drive It* is absolutely free to use, at no cost limit and with no storage limit. *Drive It* is powered by Node.js and Amazon Web Services (AWS).
+***Drive It*** is a cloud-based web application, that allows you to store, retrieve and manage files over the cloud. *Drive It* is absolutely free to use, at no cost and with no storage limit. *Drive It* is powered by Node.js and Amazon Web Services (AWS).
 
 ***Drive It*** strives on file security too. *Drive It* runs on ```https``` with a valid SSL certicate, so no worries about the files you store. Your files will be secure, always.
 
@@ -50,13 +50,13 @@ With a User friendly Interface,
 and few other internal services like VPC, IAM, Certificate manager, etc.. to provide a faster, better and efficient service.
 
 ### Latest Version
-- ##### 2.1.0 
+- ##### 2.3.1 
 
 ### Upcoming Features!
-  - New User friendly Interface
-  - Creating folders
+  - Folder management
+  - Trash 
   - Renaming the files
-  - Bulk Download
+  - Multiselect interactions
 
 
 # Check out my other works 
