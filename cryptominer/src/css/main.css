@@ -1,5 +1,5 @@
 header {
-	padding-top: 10px;
+  padding-top: 10px;
   background: #26a69a;
   border-bottom: 4px solid #eaeaea;
   position: relative;
@@ -9,17 +9,17 @@ header {
   z-index: 200;
 }
 .pane-title {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .page-header {
-	text-align: center;
-	font-size: 40px;
-	font-weight: 300;
-	color: #fff;
-	-webkit-font-smoothing: antialiased;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 .page-container {
-	min-height: 100%;
+  min-height: 100%;
 }
 .message-box {
   margin-top: 20px;
@@ -35,25 +35,25 @@ footer {
   z-index: 100;
 }
 .row {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .col {
-	float: left;
-	display: inline-block;
-	box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
 }
 .dropdown-content {
-	max-height: 300px;
+  max-height: 300px;
 }
 .hide {
-	display: none;
+  display: none;
 }
 .page-container .status-section,
 .page-container .mining-section {
   min-height: 100px;
   margin: 2% !important;
   width: 96vw;
-  min-width: 360px !important;
+  min-width: 330px !important;
   padding: 15px;
   text-transform: uppercase;
   font-size: 14px;
@@ -83,10 +83,10 @@ span.label {
 }
 .display-field {
   text-align: center;
-  width: 110px;
+  width: 100px;
 }
 .mining-btn {
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 15px 40px;
   height: 70px;
   font-size: 20px;
@@ -96,8 +96,8 @@ span.label {
   width: 50%;
   align-items: center;
   text-align: center;
-  margin: 30px auto;
-  min-width: 360px;
+  margin: 30px auto 20px;
+  min-width: 330px;
 }
 .withdraw-btn {
   margin-left: 20px;
