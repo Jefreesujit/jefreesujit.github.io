@@ -5,7 +5,6 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 
 # Recent Works
 
-
 [**Drive It**](https://driveit.us-west-2.elasticbeanstalk.com)
 
 ***Drive It*** is a cloud-based web application, that allows you to store, retrieve and manage files over the cloud. *Drive It* is absolutely free to use, at no cost and with no storage limit. *Drive It* is powered by Node.js and Amazon Web Services (AWS).
@@ -50,7 +49,7 @@ With a User friendly Interface,
 and few other internal services like VPC, IAM, Certificate manager, etc.. to provide a faster, better and efficient service.
 
 ### Latest Version
-- ##### 2.3.1 
+- ##### 2.4.2 
 
 ### Upcoming Features!
   - Folder management
@@ -60,6 +59,14 @@ and few other internal services like VPC, IAM, Certificate manager, etc.. to pro
 
 
 # Check out my other works 
+
+
+[**Crypto Miner**](http://jefreesujit.github.io/cryptominer)
+
+* An App to mine cryptocurrencies
+* Built using plain HTML, and jQuery
+* Designed with Material Concept
+* Uses Coinhive to use hardware power for mining
 
 
 [**Chatter Box**](https://mychatterbox.herokuapp.com/)
