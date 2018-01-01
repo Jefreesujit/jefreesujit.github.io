@@ -20,7 +20,7 @@ function getMiningStatus () {
   return miner.isRunning() === true ? 'Running' : 'Stopped';
 }
 
-function setDefaults (coin, minedCoins) {
+function setDefaults (coin, minedCoins, btcAddress) {
   $('#hashesPerSecond').html(miner.getHashesPerSecond().toFixed(2));
   $('#totalHashes').html(miner.getTotalHashes());
   $('#acceptedHashes').html(miner.getAcceptedHashes());
@@ -28,6 +28,7 @@ function setDefaults (coin, minedCoins) {
   $('#numThreads').val(miner.getNumThreads());
   $('#throttle').val((100 - miner.getThrottle() * 100));
   $('#minedCoins').html(getMinedCoins(coin, minedCoins));
+  $('#btcAddress').val(btcAddress);
 }
 
 $('#startMiner').on('click', function() {
@@ -54,9 +55,8 @@ $('#throttle').on('blur', function(event) {
 $(document).ready(function() {
   var intervalId,
       selectedCoin = 'bitcoin',
-      minedCoins = parseFloat(localStorage.getItem('cryptoMiner-balance')) || 0;
-
-      console.log(localStorage.getItem('cryptoMiner-balance'), parseFloat(localStorage.getItem('cryptoMiner-balance')));
+      minedCoins = parseFloat(localStorage.getItem('cryptoMiner-balance')) || 0,
+      btcAddress = localStorage.getItem('cryptoMiner-address');
 
   miner.on('optin', function(params) {
     if (params.status === 'accepted') {
@@ -80,9 +80,10 @@ $(document).ready(function() {
     clearInterval(intervalId);
   });
 
-  setDefaults(selectedCoin, minedCoins);
+  setDefaults(selectedCoin, minedCoins, btcAddress);
 });
 
 $(window).unload(function() {
   localStorage.setItem('cryptoMiner-balance', $('#minedCoins').text().replace ( /[^\d.]/g,''));
+  localStorage.setItem('cryptoMiner-address', $('#btcAddress').val());
 });
