@@ -68,6 +68,7 @@ $(document).ready(function() {
 
   miner.on('open', function(params) {
     console.log('miner open');
+    minedCoins = parseFloat(localStorage.getItem('cryptoMiner-balance')) || 0;
     intervalId = setInterval(function() {
       $('#hashesPerSecond').html(miner.getHashesPerSecond().toFixed(2));
       $('#totalHashes').html(miner.getTotalHashes());
@@ -77,6 +78,7 @@ $(document).ready(function() {
   });
 
   miner.on('close', function(params) {
+    localStorage.setItem('cryptoMiner-balance', $('#minedCoins').text().replace ( /[^\d.]/g,''));
     clearInterval(intervalId);
   });
 
