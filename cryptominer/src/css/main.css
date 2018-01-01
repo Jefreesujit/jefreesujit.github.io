@@ -83,7 +83,7 @@ span.label {
 }
 .display-field {
   text-align: center;
-  width: 100px;
+  min-width: 100px;
 }
 .mining-btn {
   margin-top: 20px;
