@@ -5,6 +5,16 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 
 # Recent Works
 
+[**Electroneum Miner**](http://etnminer.tk)
+
+* An App to mine cryptocurrencies (Electroneum)
+* Allows users to directly mine into mining pool, no clients required
+* Uses cazla's m.js to mine cryptocurrencies
+* Uses web-socket-proxy to proxy requests to mining pools
+* Built using plain HTML, and jQuery
+* Designed with Material Concept
+
+
 [**Drive It**](https://driveit.us-west-2.elasticbeanstalk.com)
 
 ***Drive It*** is a cloud-based web application, that allows you to store, retrieve and manage files over the cloud. *Drive It* is absolutely free to use, at no cost and with no storage limit. *Drive It* is powered by Node.js and Amazon Web Services (AWS).
@@ -59,15 +69,6 @@ and few other internal services like VPC, IAM, Certificate manager, etc.. to pro
 
 
 # Check out my other works 
-
-
-[**Crypto Miner**](http://jefreesujit.github.io/cryptominer)
-
-* An App to mine cryptocurrencies
-* Built using plain HTML, and jQuery
-* Designed with Material Concept
-* Uses Coinhive to use hardware power for mining
-
 
 [**Chatter Box**](https://mychatterbox.herokuapp.com/)
 
