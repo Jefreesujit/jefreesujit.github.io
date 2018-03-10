@@ -1,0 +1,85 @@
+html {
+	line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0,0,0,0.87);
+}
+body {
+	margin: 0;
+}
+.page-container {
+	min-height: 100%;
+}
+footer {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  z-index: 100;
+}
+.row {
+	margin-bottom: 10px;
+}
+.col {
+	/* float: left; */
+	display: inline-block;
+	box-sizing: border-box;
+}
+.left-pane, .right-pane {
+	margin: 5%;
+	float: left;
+	width: 40%;
+	box-sizing: border-box;
+}
+.center-pane {
+	margin: 5% 15%;
+}
+.nav-section {
+    height: 250px;
+    background: #26a69a;
+}
+.profile-section {
+    width: 230px;
+    height: 120px;
+    margin: auto;
+    transform: translatey(-100%);
+}
+.profile-icon {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    border-radius: 135px;
+    border: 5px solid white;
+}
+.basic-info {
+    margin: auto;
+    text-align: center;
+}
+.profile-name {
+    font-weight: bold;
+    font-size: 36px;
+    color: #26a69a;
+    letter-spacing: 0.5px;
+}
+.designation {
+    font-size: 26px;
+    color: dimgray;
+}
+.profile-bio {
+    margin: 30px 0px 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+.ref-site {
+    display: inline-block;
+    margin: 20px;
+}
+.site-link {
+   text-decoration: none;
+   color: #26a69a;
+   font-size: 18px;
+}
