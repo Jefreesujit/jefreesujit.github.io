@@ -12,7 +12,7 @@ class IntroSection extends React.Component {
           </div>
         </div>
         <div className="profile-section">
-          <img className="profile-icon" src="assets/photo.png" id="profileImg" />
+          <img className="profile-icon" src="assets/images/photo.png" id="profileImg" />
         </div>
         <div className="basic-info">
           <div className="profile-name"> Jefree Sujit</div>
@@ -24,15 +24,15 @@ class IntroSection extends React.Component {
           </div>
           <div className="ref-links">
             <div className="ref-site">
-              <img src="assets/github.png" className="icon git" />
+              <img src="assets/images/github.png" className="icon git" />
               <a className="site-link" href="https://github.com/jefreesujit">Github</a>
             </div>
             <div className="ref-site">
-              <img src="assets/linkedin.png" className="icon linkedin" />
+              <img src="assets/images/linkedin.png" className="icon linkedin" />
               <a className="site-link" href="https://www.linkedin.com/in/jefreesujit">Linked In</a>
             </div>
             <div className="ref-site">
-              <img src="assets/stackoverflow.png" className="icon stack" />
+              <img src="assets/images/stackoverflow.png" className="icon stack" />
               <a className="site-link" href="https://stackoverflow.com/users/2299439/jefree-sujit">Stack Overflow</a>
             </div>
           </div>

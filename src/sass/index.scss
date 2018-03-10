@@ -75,11 +75,16 @@ footer {
     font-size: 20px;
 }
 .ref-site {
-    display: inline-block;
-    margin: 20px;
+	display: inline-flex;
+	margin: 20px;
+	align-items: center;
 }
 .site-link {
    text-decoration: none;
    color: #26a69a;
    font-size: 18px;
+}
+.icon {
+	height: 20px;
+	margin: 0px 5px;
 }

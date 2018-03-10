@@ -4,7 +4,7 @@ module.exports = env => {
       './src/index.js'
     ],
     output: {
-      filename: './public/index.build.js'
+      filename: './assets/index.build.js'
     },
     module: {
       loaders: [{
