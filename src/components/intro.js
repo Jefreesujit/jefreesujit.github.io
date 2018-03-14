@@ -3,7 +3,6 @@
 import React from 'react';
 
 class IntroSection extends React.Component {
-
   render () {
     return (
       <div id="intro" className="intro-section">
@@ -19,8 +18,8 @@ class IntroSection extends React.Component {
           <div className="designation"> Front End Developer at The Advisory Board Company</div>
           <div className="profile-bio">
             ✪ Computer Science Graduate ✪ Lives in Chennai, India <br/>
-            ✪ Passionate towards Web development <br/>
-            ✪ JS Lover ✪ Front End Enthusiast ✪ Guitar Noob <br/>
+            ✪ Passionate towards Web development ✪ JS Lover<br/>
+            ✪ Frontend Freak ✪ Cryptocurrency Enthusiast ✪ Guitar Noob <br/>
           </div>
           <div className="ref-links">
             <div className="ref-site">
@@ -28,12 +27,12 @@ class IntroSection extends React.Component {
               <a className="site-link" href="https://github.com/jefreesujit">Github</a>
             </div>
             <div className="ref-site">
-              <img src="assets/images/linkedin.png" className="icon linkedin" />
-              <a className="site-link" href="https://www.linkedin.com/in/jefreesujit">Linked In</a>
-            </div>
-            <div className="ref-site">
               <img src="assets/images/stackoverflow.png" className="icon stack" />
               <a className="site-link" href="https://stackoverflow.com/users/2299439/jefree-sujit">Stack Overflow</a>
+            </div>
+            <div className="ref-site">
+              <img src="assets/images/linkedin.png" className="icon linkedin" />
+              <a className="site-link" href="https://www.linkedin.com/in/jefreesujit">Linked In</a>
             </div>
           </div>
         </div>

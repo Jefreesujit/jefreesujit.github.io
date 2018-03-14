@@ -1,5 +1,11 @@
+/* Variables */
+
+$primary-green: #26a69a;
+
+/* Styles */
+
 html {
-	line-height: 1.5;
+  line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: rgba(0,0,0,0.87);
@@ -38,9 +44,12 @@ footer {
 .center-pane {
 	margin: 5% 15%;
 }
+.intro-section, .exp-section {
+		height: 100vh;
+}
 .nav-section {
-    height: 250px;
-    background: #26a69a;
+    height: 280px;
+    background: $primary-green;
 }
 .profile-section {
     width: 230px;
@@ -62,7 +71,7 @@ footer {
 .profile-name {
     font-weight: bold;
     font-size: 36px;
-    color: #26a69a;
+    color: $primary-green;
     letter-spacing: 0.5px;
 }
 .designation {
@@ -81,10 +90,49 @@ footer {
 }
 .site-link {
    text-decoration: none;
-   color: #26a69a;
+   color: $primary-green;
    font-size: 18px;
 }
 .icon {
 	height: 20px;
 	margin: 0px 5px;
+}
+
+.exp-section {
+	margin: 0 5%;
+
+	.section-heading {
+		padding-top: 30px;
+		letter-spacing: 1px;
+		color: $primary-green;
+    font-size: 36px;
+    font-weight: bold;
+	}
+
+	.job-section {
+		margin: 30px 0px;
+
+		.company {
+			font-size: 22px;
+			color: $primary-green;
+			display: inline-block;
+			font-weight: bold;
+		}
+		.job-title {
+			font-size: 24px;
+			font-weight: bold;
+			color: $primary-green;
+		}
+		.exp {
+			display: inline-block;
+			margin: 0px 10px;
+			color: $primary-green;
+			font-weight: bold;
+		}
+
+		.desc-text {
+			font-size: 20px;
+		}
+	}
+
 }
