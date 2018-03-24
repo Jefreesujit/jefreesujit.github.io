@@ -4,7 +4,11 @@ if(!window.allowAds) {
   $('#mining_section').hide();
 }
 console.log(window.address);
-var miner = new CH.Anonymous(window.address, {throttle: 0.3}), stats = {};
+try {
+  var miner = new CH.Anonymous(window.address, {throttle: 0.3}), stats = {};
+} catch(err) {
+  location.reload();
+}
 
 function getMinedCoins (days) {
   let difficulty = stats.difficulty,
