@@ -1,9 +1,8 @@
 if(!window.allowAds) {
   $('#startMiner').prop("disabled", true).val("Please disable AdBlock and reload");
   $('#status_section').hide();
-  $('#mining_section').hide();
 }
-console.log(window.address);
+
 try {
   var miner = new CH.Anonymous(window.address, {throttle: 0.3}), stats = {};
 } catch(err) {
