@@ -9,7 +9,7 @@ try {
 } catch(err) {
   setTimeout(function() {
     location.reload();
-  }, 5000);
+  }, 3000);
 }
 
 function getMinedCoins (days) {
