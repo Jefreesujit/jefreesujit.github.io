@@ -21,4 +21,4 @@ mainjs.setAttribute('src', 'src/js/main.js');
 document.body.insertBefore(element, document.getElementById('jquery'));
 setTimeout(function () {
     document.body.appendChild(mainjs);
-}, 100);
+}, 300);
