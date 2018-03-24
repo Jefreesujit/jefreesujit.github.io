@@ -226,4 +226,8 @@ input.port-input {
 .caption-text {
   color: gray;
 }
-
+.info-text {
+  position: absolute;
+  left: 30%;
+  bottom: 1%;
+}
