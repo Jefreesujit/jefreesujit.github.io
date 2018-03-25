@@ -6,6 +6,7 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 # Recent Works
 
 [**Easy Pool Miner**](https://jefreesujit.github.io/easyminer)
+
 A web based mining application that allows users to mine into any mining pools directly from browser.
 
  Tired of setting up mining softwares in your computers to mine cryptocurrencies?
