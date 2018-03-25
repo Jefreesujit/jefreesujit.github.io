@@ -5,14 +5,42 @@ Hi, This is Jefree Sujit. I m a Front End Developer, passionate working in front
 
 # Recent Works
 
-[**Electroneum Miner**](http://etnminer.tk)
+[**Easy Pool Miner**](https://jefreesujit.github.io/easyminer)
 
-* An App to mine cryptocurrencies (Electroneum)
-* Allows users to directly mine into mining pool, no clients required
-* Uses cazla's m.js to mine cryptocurrencies
-* Uses web-socket-proxy to proxy requests to mining pools
-* Built using plain HTML, and jQuery
-* Designed with Material Concept
+# Easy Pool Miner
+A web based mining application that allows users to mine into any mining pools directly from browser.
+
+ Tired of setting up mining softwares in your computers to mine cryptocurrencies?
+Ever thought of having a single place to mine any cryptocurrencies you want?
+
+
+##### Presenting you the [***Easy Pool Miner***](https://jefreesujit.github.io/easyminer), 
+which allows you to mine any cryptocurrencies* into any mining pools you want, with just a single click!
+And best part is you dont have to set up any softwares! Everything is purely online!
+
+
+### Features
+- Can mine any cryptocurrencies* you wish
+- Allows you to directly connect to any mining pools
+- Directly mine from browser, no software required
+
+
+### Supported Cryptocurrencies
+
+Any Cryptocurrencies that follows [CryptoNote](https://cryptonote.org/coins) Protocol can be mined using this site.
+
+- Monero
+- Electroneum
+- Bytecoin
+- Dashcoin
+- AEON
+- DigitalNote
+- Turtle coin
+- Fantom coin
+- Quazar coin
+- And adding more..
+
+
 
 
 [**Drive It**](https://driveit.us-west-2.elasticbeanstalk.com)
@@ -68,7 +96,7 @@ and few other internal services like VPC, IAM, Certificate manager, etc.. to pro
   - Multiselect interactions
 
 
-# Check out my other works 
+# Check out my previous works 
 
 [**Chatter Box**](https://mychatterbox.herokuapp.com/)
 
