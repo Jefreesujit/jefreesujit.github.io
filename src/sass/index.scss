@@ -48,40 +48,40 @@ footer {
 		height: 100vh;
 }
 .nav-section {
-    height: 280px;
-    background: $primary-green;
+	height: 280px;
+	background: $primary-green;
 }
 .profile-section {
-    width: 230px;
-    height: 120px;
-    margin: auto;
-    transform: translatey(-100%);
+	width: 230px;
+	height: 120px;
+	margin: auto;
+	transform: translatey(-100%);
 }
 .profile-icon {
-    width: 220px;
-    height: 220px;
-    margin: auto;
-    border-radius: 135px;
-    border: 5px solid white;
+	width: 220px;
+	height: 220px;
+	margin: auto;
+	border-radius: 135px;
+	border: 5px solid white;
 }
 .basic-info {
-    margin: auto;
-    text-align: center;
+	margin: auto;
+	text-align: center;
 }
 .profile-name {
-    font-weight: bold;
-    font-size: 36px;
-    color: $primary-green;
-    letter-spacing: 0.5px;
+	font-weight: bold;
+	font-size: 36px;
+	color: $primary-green;
+	letter-spacing: 0.5px;
 }
 .designation {
-    font-size: 26px;
-    color: dimgray;
+	font-size: 26px;
+	color: dimgray;
 }
 .profile-bio {
-    margin: 30px 0px 10px;
-    line-height: 40px;
-    font-size: 20px;
+	margin: 30px 0px 10px;
+	line-height: 40px;
+	font-size: 20px;
 }
 .ref-site {
 	display: inline-flex;
@@ -98,19 +98,20 @@ footer {
 	margin: 0px 5px;
 }
 
+.section-heading {
+	letter-spacing: 1px;
+	background: #26a69a;
+	font-size: 36px;
+	font-weight: bold;
+	padding: 15px 70px;
+	color: white;
+	position: sticky;
+	top: -1px;
+}
+
 .exp-section {
-	margin: 0 5%;
-
-	.section-heading {
-		padding-top: 30px;
-		letter-spacing: 1px;
-		color: $primary-green;
-    font-size: 36px;
-    font-weight: bold;
-	}
-
 	.job-section {
-		margin: 30px 0px;
+		margin: 30px 5%;
 
 		.company {
 			font-size: 22px;
