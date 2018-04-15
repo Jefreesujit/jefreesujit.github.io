@@ -15,11 +15,11 @@ class IntroSection extends React.Component {
         </div>
         <div className="basic-info">
           <div className="profile-name"> Jefree Sujit</div>
-          <div className="designation"> Front End Developer at The Advisory Board Company</div>
+          <div className="designation"> Front End Developer at <img className="optum-logo" src="assets/images/optum.png"/> </div>
           <div className="profile-bio">
             ✪ Computer Science Graduate ✪ Lives in Chennai, India <br/>
             ✪ Passionate towards Web development ✪ JS Lover<br/>
-            ✪ Frontend Freak ✪ Cryptocurrency Enthusiast ✪ Guitar Noob <br/>
+            ✪ Marvel Fan ✪ Anime Freak ✪ Crypto Enthusiast ✪ Guitar Noob <br/>
           </div>
           <div className="ref-links">
             <div className="ref-site">
@@ -32,7 +32,7 @@ class IntroSection extends React.Component {
             </div>
             <div className="ref-site">
               <img src="assets/images/linkedin.png" className="icon linkedin" />
-              <a className="site-link" href="https://www.linkedin.com/in/jefreesujit">Linked In</a>
+              <a className="site-link" href="https://www.linkedin.com/in/jefreesujit">LinkedIn</a>
             </div>
           </div>
         </div>

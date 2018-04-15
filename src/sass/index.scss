@@ -44,9 +44,6 @@ footer {
 .center-pane {
 	margin: 5% 15%;
 }
-.intro-section, .exp-section {
-		height: 100vh;
-}
 .nav-section {
 	height: 280px;
 	background: $primary-green;
@@ -98,15 +95,24 @@ footer {
 	margin: 0px 5px;
 }
 
+.optum-logo {
+	width: 130px;
+}
+
 .section-heading {
 	letter-spacing: 1px;
 	background: #26a69a;
+	box-shadow: 0px 2px 6px 0px grey;
 	font-size: 36px;
 	font-weight: bold;
-	padding: 15px 70px;
+	padding: 10px 70px;
 	color: white;
 	position: sticky;
 	top: -1px;
+}
+
+.intro-section, .skills-section {
+	height: 100vh;
 }
 
 .exp-section {
@@ -136,4 +142,45 @@ footer {
 		}
 	}
 
+}
+
+.skills-section {
+	.graph-section {
+		margin: 30px 5%;
+	}
+
+	.section-title {
+		color: #26a69a;
+    font-size: 26px;
+    font-weight: 900;
+		margin: 20px 0px;
+		text-transform: uppercase;
+	}
+
+	.skill {
+		fill: $primary-green;
+    font-size: 22px;
+    font-weight: bold;
+	}
+
+	.bar-chart {
+		.bar {
+			width: 10%;
+			height: 50px;
+			fill: $primary-green;
+
+			&.empty {
+				fill: lightgray;
+				border: 1px solid $primary-green;
+			}
+		}
+
+		@for $i from 1 through 8 {
+			&::nth-child(#{$i}) {
+				.bar {
+					x: calc(160 * #{$i});
+				}
+			}
+		}
+	}
 }
