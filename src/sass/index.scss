@@ -110,10 +110,11 @@ footer {
 	padding: 10px 70px;
 	color: white;
 	position: sticky;
-	top: -1px;
+  top: 0px;
+  z-index: 10;
 }
 
-.intro-section, .skills-section {
+.intro-section, .projects-section {
 	height: 100vh;
 }
 
@@ -148,35 +149,39 @@ footer {
 
 .skills-section {
 	.graph-section {
-    margin: 40px 5% 20px;
+    margin: 30px 5%;
 
     .vertical-list {
-      .bar-chart {
-        .skill {
-          x: 0;
-        }
+      .chart {
+        width: 90vw;
 
-        .bar {
-          width: 10%;
-          height: 50px;
-          fill: $primary-green;
-    
-          &.empty {
-            fill: $primary-gray;
-            border: 1px solid $primary-green;
+        .bar-chart {
+          .skill {
+            x: 0;
           }
-    
-          @for $i from 1 through 9 {
-            &:nth-child(#{$i}) {
-              x: calc(130 * (#{$i} - 1));
+
+          .bar {
+            width: 10%;
+            height: 50px;
+            fill: $primary-green;
+      
+            &.empty {
+              fill: $primary-gray;
+              border: 1px solid $primary-green;
+            }
+      
+            @for $i from 1 through 9 {
+              &:nth-child(#{$i}) {
+                x: calc(11% * (#{$i} - 1));
+              }
             }
           }
-        }
-    
-        @for $i from 1 through 5 {
-          &:nth-child(#{$i}) {
-            .bar {
-              y: calc(10 + ((#{$i} - 2) * 80));
+      
+          @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+              .bar {
+                y: calc(10 + ((#{$i} - 2) * 80));
+              }
             }
           }
         }

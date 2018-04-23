@@ -11,7 +11,7 @@ class TechSkills extends React.Component {
         <div className="graph-section">
           <div className="vertical-list">
             <div className="section-title">Specialisation:</div>
-            <svg className="chart" width="1200" height="310" aria-labelledby="title desc" role="img">
+            <svg className="chart" height="310" aria-labelledby="title desc" role="img">
               <desc id="desc">Specialised skillsets: ReactJs, Node.js, Python, Amazon Web Services</desc>
               <g className="bar-chart">
                 <text className="skill" y="45">ReactJS</text>

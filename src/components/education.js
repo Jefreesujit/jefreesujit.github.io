@@ -7,7 +7,6 @@ class Education extends React.Component {
   render () {
     return (
       <div id="education" className="edu-section">
-      
       </div>
     );
   }
