@@ -28,7 +28,7 @@ class Experience extends React.Component {
           </div>
         </div>
         <div className="job-section">
-          <div className="job-title">Front End Intern</div>
+          <div className="job-title">Engineering Intern</div>
           <div className="company">The Advisory Board Company</div>
           <div className="exp">(Jan 2016 - May 2016)</div>
           <div className="role-rescription">

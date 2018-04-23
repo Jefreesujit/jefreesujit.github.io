@@ -1,6 +1,8 @@
 /* Variables */
 
 $primary-green: #26a69a;
+$primary-gray: #e0e0e0;
+$secondary-black: dimgray;
 
 /* Styles */
 
@@ -73,7 +75,7 @@ footer {
 }
 .designation {
 	font-size: 26px;
-	color: dimgray;
+	color: $secondary-black;
 }
 .profile-bio {
 	margin: 30px 0px 10px;
@@ -138,7 +140,7 @@ footer {
 		}
 
 		.desc-text {
-			font-size: 20px;
+      font-size: 20px;
 		}
 	}
 
@@ -146,41 +148,92 @@ footer {
 
 .skills-section {
 	.graph-section {
-		margin: 30px 5%;
+    margin: 40px 5% 20px;
+
+    .vertical-list {
+      .bar-chart {
+        .skill {
+          x: 0;
+        }
+
+        .bar {
+          width: 10%;
+          height: 50px;
+          fill: $primary-green;
+    
+          &.empty {
+            fill: $primary-gray;
+            border: 1px solid $primary-green;
+          }
+    
+          @for $i from 1 through 9 {
+            &:nth-child(#{$i}) {
+              x: calc(130 * (#{$i} - 1));
+            }
+          }
+        }
+    
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            .bar {
+              y: calc(10 + ((#{$i} - 2) * 80));
+            }
+          }
+        }
+      }
+    }
+
+    .horizontal-list {
+      $pie-values: 60 120 120 120 180;
+
+      .chart {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .pie-chart {
+        .chart-box {
+          width: 150px;
+          height: 150px;
+          transform: rotate(-90deg);
+          border-radius: 50%;
+        }
+
+        .pie {
+          r: 75;
+          cy: 75;
+          cx: 75;
+          fill: $primary-green;
+          stroke-width: 150;
+          stroke: $primary-gray;
+        }
+
+        @for $i from 1 through length($pie-values) {
+          &:nth-child(#{$i}) {
+            .pie {
+              stroke-dasharray: nth($pie-values, $i) 450;
+            }
+          }
+        }
+      }
+    }
 	}
 
 	.section-title {
 		color: #26a69a;
-    font-size: 26px;
-    font-weight: 900;
+		font-size: 26px;
+		font-weight: 900;
 		margin: 20px 0px;
 		text-transform: uppercase;
 	}
 
 	.skill {
-		fill: $primary-green;
+    fill: $secondary-black;
+    color: $secondary-black;
     font-size: 22px;
     font-weight: bold;
-	}
-
-	.bar-chart {
-		.bar {
-			width: 10%;
-			height: 50px;
-			fill: $primary-green;
-
-			&.empty {
-				fill: lightgray;
-				border: 1px solid $primary-green;
-			}
-		}
-
-		@for $i from 1 through 8 {
-			&::nth-child(#{$i}) {
-				.bar {
-					x: calc(160 * #{$i});
-				}
-			}
-		}
+    text-align: center;
+    margin: 15px;
 	}
 }
