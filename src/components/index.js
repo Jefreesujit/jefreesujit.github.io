@@ -5,6 +5,7 @@ import IntroSection from './intro';
 import Experience from './experience';
 import TechSkills from './techskills';
 import Projects from './projects';
+import EndSection from './endcard';
 
 class Home extends React.Component {
   render () {
@@ -14,6 +15,7 @@ class Home extends React.Component {
         <Experience />
         <TechSkills />
         <Projects />
+        <EndSection />
       </div>
     );
   }

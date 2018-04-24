@@ -19,20 +19,20 @@ class IntroSection extends React.Component {
           <div className="profile-bio">
             ✪ Computer Science Graduate ✪ Lives in Chennai, India <br/>
             ✪ Passionate towards Web development ✪ JS Lover<br/>
-            ✪ Marvel Fan ✪ Anime Freak ✪ Crypto Enthusiast ✪ Guitar Noob <br/>
+            ✪ Anime Fan ✪ Marvel Freak ✪ Crypto Enthusiast ✪ Guitar Noob <br/>
           </div>
           <div className="ref-links">
             <div className="ref-site">
               <img src="assets/images/github.png" className="icon git" />
-              <a className="site-link" href="https://github.com/jefreesujit">Github</a>
+              <a className="site-link" target="_blank" href="https://github.com/jefreesujit">Github</a>
             </div>
             <div className="ref-site">
               <img src="assets/images/stackoverflow.png" className="icon stack" />
-              <a className="site-link" href="https://stackoverflow.com/users/2299439/jefree-sujit">Stack Overflow</a>
+              <a className="site-link" target="_blank" href="https://stackoverflow.com/users/2299439/jefree-sujit">Stack Overflow</a>
             </div>
             <div className="ref-site">
               <img src="assets/images/linkedin.png" className="icon linkedin" />
-              <a className="site-link" href="https://www.linkedin.com/in/jefreesujit">LinkedIn</a>
+              <a className="site-link" target="_blank" href="https://www.linkedin.com/in/jefreesujit">LinkedIn</a>
             </div>
           </div>
         </div>

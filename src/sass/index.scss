@@ -114,13 +114,13 @@ footer {
   z-index: 10;
 }
 
-.intro-section, .projects-section {
+.intro-section, .end-section {
 	height: 100vh;
 }
 
 .exp-section {
 	.job-section {
-		margin: 30px 5%;
+		padding: 30px 5%;
 
 		.company {
 			font-size: 22px;
@@ -149,7 +149,7 @@ footer {
 
 .skills-section {
 	.graph-section {
-    margin: 30px 5%;
+    padding: 30px 5%;
 
     .vertical-list {
       .chart {
@@ -245,7 +245,7 @@ footer {
 
 .projects-section {
   .prolist-section {
-    margin: 30px 5%;
+    padding: 30px 5%;
 
     .section-title {
       color: #26a69a;
@@ -282,6 +282,43 @@ footer {
           margin: 15px 20px;
         }
       }
+    }
+  }
+}
+
+.end-section {
+  .endcard-title {
+    text-align: center;
+    margin-top: auto;
+    background: $primary-green;
+    height: 50vh;
+
+    .title-group {
+      transform: translateY(100%);
+
+      .center-title {
+        font-size: 84px;
+        font-weight: 900;
+        color: white;
+        letter-spacing: 1px;
+      }
+
+      .caption {
+        color: white;
+        font-size: 20px
+      }
+    }
+  }
+
+  .end-message {
+    text-align: center;
+    margin: 100px;
+    font-size: 32px;
+    color: $secondary-black;
+
+    a {
+      color: $primary-green;
+      text-decoration: none;
     }
   }
 }
