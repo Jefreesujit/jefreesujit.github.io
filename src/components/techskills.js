@@ -60,7 +60,7 @@ class TechSkills extends React.Component {
             </svg>
           </div>
           <div className="horizontal-list">
-          <div className="section-title">Other Skills:</div>
+          <div className="section-title">Related Skills:</div>
             <div className="chart">
               <div className="pie-chart">
                 <svg className="chart-box">

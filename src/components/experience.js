@@ -10,7 +10,7 @@ class Experience extends React.Component {
         <div className="section-heading">Experience</div>
         <div className="job-section">
           <div className="job-title">Front End Engineer</div>
-          <div className="company">Optum Analytics</div>
+          <div className="company">The Advisory Board Company</div>
           <div className="exp">(Apr 2018 - Present)</div>
           <div className="role-rescription">
             <p className="desc-text">• Firm rooting the "Console" application with solid technology stacks, making it more modular and as a platform application to support for any framework to be built in.</p>

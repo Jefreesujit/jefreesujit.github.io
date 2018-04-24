@@ -15,7 +15,7 @@ class IntroSection extends React.Component {
         </div>
         <div className="basic-info">
           <div className="profile-name"> Jefree Sujit</div>
-          <div className="designation"> Front End Developer at <img className="optum-logo" src="assets/images/optum.png"/> </div>
+          <div className="designation"> Front End Engineer at The Advisory Board Company </div>
           <div className="profile-bio">
             ✪ Computer Science Graduate ✪ Lives in Chennai, India <br/>
             ✪ Passionate towards Web development ✪ JS Lover<br/>

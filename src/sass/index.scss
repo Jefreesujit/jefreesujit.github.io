@@ -46,59 +46,65 @@ footer {
 .center-pane {
 	margin: 5% 15%;
 }
-.nav-section {
-	height: 280px;
-	background: $primary-green;
-}
-.profile-section {
-	width: 230px;
-	height: 120px;
-	margin: auto;
-	transform: translatey(-100%);
-}
-.profile-icon {
-	width: 220px;
-	height: 220px;
-	margin: auto;
-	border-radius: 135px;
-	border: 5px solid white;
-}
-.basic-info {
-	margin: auto;
-	text-align: center;
-}
-.profile-name {
-	font-weight: bold;
-	font-size: 36px;
-	color: $primary-green;
-	letter-spacing: 0.5px;
-}
-.designation {
-	font-size: 26px;
-	color: $secondary-black;
-}
-.profile-bio {
-	margin: 30px 0px 10px;
-	line-height: 40px;
-	font-size: 20px;
-}
-.ref-site {
-	display: inline-flex;
-	margin: 20px;
-	align-items: center;
-}
-.site-link {
-   text-decoration: none;
-   color: $primary-green;
-   font-size: 18px;
-}
-.icon {
-	height: 20px;
-	margin: 0px 5px;
+.intro-section {
+  .nav-section {
+    height: 280px;
+    background: $primary-green;
+  }
+  .profile-section {
+    width: 230px;
+    height: 120px;
+    margin: auto;
+    transform: translatey(-100%);
+  }
+  .profile-icon {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    border-radius: 135px;
+    border: 5px solid white;
+  }
+  .basic-info {
+    margin: auto;
+    text-align: center;
+  }
+  .profile-name {
+    font-weight: bold;
+    font-size: 36px;
+    color: $primary-green;
+    letter-spacing: 0.5px;
+  }
+  .designation {
+    font-size: 26px;
+    color: $secondary-black;
+  }
+  .profile-bio {
+    margin: 30px 0px 10px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .ref-site {
+    display: inline-flex;
+    margin: 20px;
+    align-items: center;
+  }
+  .site-link {
+    text-decoration: none;
+    color: $primary-green;
+    font-size: 18px;
+  }
+  .icon {
+    height: 20px;
+    margin: 0px 5px;
+  }
+
+  .optum-logo {
+    width: 130px;
+  }
 }
 
-.optum-logo {
-	width: 130px;
+.intro-section, .end-section {
+	height: 100vh;
 }
 
 .section-heading {
@@ -107,15 +113,11 @@ footer {
 	box-shadow: 0px 2px 6px 0px grey;
 	font-size: 36px;
 	font-weight: bold;
-	padding: 10px 70px;
+	padding: 5px 70px;
 	color: white;
 	position: sticky;
   top: 0px;
   z-index: 10;
-}
-
-.intro-section, .end-section {
-	height: 100vh;
 }
 
 .exp-section {
