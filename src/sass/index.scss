@@ -122,29 +122,34 @@ footer {
 
 .exp-section {
 	.job-section {
-		padding: 30px 5%;
+    padding: 5%;
 
-		.company {
-			font-size: 22px;
-			color: $primary-green;
-			display: inline-block;
-			font-weight: bold;
-		}
-		.job-title {
-			font-size: 24px;
-			font-weight: bold;
-			color: $primary-green;
-		}
-		.exp {
-			display: inline-block;
-			margin: 0px 10px;
-			color: $primary-green;
-			font-weight: bold;
-		}
+    .job-panel {
+      padding: 30px 50px;
+      box-shadow: 0px 0px 1px 0px grey;
 
-		.desc-text {
-      font-size: 20px;
-		}
+      .company {
+        font-size: 22px;
+        color: $primary-green;
+        display: inline-block;
+        font-weight: bold;
+      }
+      .job-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary-green;
+      }
+      .exp {
+        display: inline-block;
+        margin: 0px 10px;
+        color: $primary-green;
+        font-weight: bold;
+      }
+
+      .desc-text {
+        font-size: 20px;
+      }
+    }
 	}
 
 }
@@ -156,6 +161,7 @@ footer {
     .vertical-list {
       .chart {
         width: 90vw;
+        // filter: drop-shadow( 5px 5px 5px gray);
 
         .bar-chart {
           .skill {
@@ -197,6 +203,7 @@ footer {
         padding-top: 10px;
         display: flex;
         justify-content: space-around;
+        // filter: drop-shadow( 5px 5px 5px gray);
       }
 
       .pie-chart {
