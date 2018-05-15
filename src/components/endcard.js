@@ -15,7 +15,7 @@ class EndCard extends React.Component {
             </div>
           </div>
           <div className="end-message">
-            Wanna know more? reach out to me at <a href="mailto:jefree.sujit@gmail.com">jefree.sujit@gmail.com</a> ;)
+            Wanna get in touch? reach out to me at <a href="mailto:jefree.sujit@gmail.com">jefree.sujit@gmail.com</a> ;)
           </div>
         </div>
       </div>
