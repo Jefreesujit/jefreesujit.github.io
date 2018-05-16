@@ -3,6 +3,18 @@
 import React from 'react';
 
 class IntroSection extends React.Component {
+
+  renderRefLinks (linksList) {
+    return linksList.map((link) => {
+      return (
+        <div className="ref-site">
+          <img src={link.iconPath} className={`icon ${link.className}`} />
+          <a className="site-link" target="_blank" href={link.linkUrl}>{link.linkName}</a>
+        </div>
+      );
+    });
+  }
+
   render () {
     return (
       <div id="intro" className="intro-section">

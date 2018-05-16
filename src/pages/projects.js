@@ -1,13 +1,15 @@
 'use strict';
 
 import React from 'react';
+import Waypoint from './components/waypoint';
 
 class Projects extends React.Component {
 
   render () {
     return (
       <div id="projects" className="projects-section">
-        <div className="section-heading">Projects</div>
+        <div className="section-heading projects">Projects</div>
+        <Waypoint selector=".projects" />
         <div className="prolist-section">
           <div className="personal-projects">
             <div className="section-title">Personal Projects</div>

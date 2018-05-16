@@ -1,12 +1,13 @@
 'use strict';
 
 import React from 'react';
+import Waypoint from './components/waypoint';
 
 class EndCard extends React.Component {
-
   render () {
     return (
-      <div id="endcard" className="end-section">
+      <div id="endcard" className="end-section" >
+        <Waypoint selector=".end-card" />
         <div className="end-card">
           <div className="endcard-title">
             <div className="title-group">

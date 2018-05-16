@@ -1,13 +1,15 @@
 'use strict';
 
 import React from 'react';
+import Waypoint from './components/waypoint';
 
 class TechSkills extends React.Component {
 
   render () {
     return (
       <div id="skills" className="skills-section">
-        <div className="section-heading">Tech Skills</div>
+        <div className="section-heading skills">Tech Skills</div>
+        <Waypoint selector=".skills" />
         <div className="graph-section">
           <div className="vertical-list">
             <div className="section-title">Specialisation:</div>

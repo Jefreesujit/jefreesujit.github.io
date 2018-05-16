@@ -1,13 +1,36 @@
 'use strict';
 
 import React from 'react';
+import Waypoint from './components/waypoint';
 
 class Experience extends React.Component {
+
+  getDescText (textList) {
+    return textList.each((text) => {
+      return <p className="desc-text">{text}</p> ;
+    });
+  }
+
+  renderExperienceCard (expList) {
+    return expList.map((expNode) => {
+      return (
+        <div className="job-section">
+          <div className="job-title">{expNode.jobTitle}</div>
+          <div className="company">{expNode.companyName}</div>
+          <div className="exp">{`(${expnode.fromDate} - ${expnode.toDate})`}</div>
+          <div className="role-rescription">
+            {this.getDescText(expNode.description)}
+          </div>
+        </div>
+      );
+    })
+  }
 
   render () {
     return (
       <div id="experience" className="exp-section">
-        <div className="section-heading">Experience</div>
+        <div className="section-heading experience">Experience</div>
+        <Waypoint selector=".experience" />
         <div className="job-section">
           <div className="job-panel">
             <div className="job-title">Front End Engineer</div>
