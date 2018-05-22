@@ -4,15 +4,19 @@ import React from 'react';
 
 class IntroSection extends React.Component {
 
-  renderRefLinks (linksList) {
-    return linksList.map((link) => {
-      return (
+  renderRefLinks (links) {
+    let linksList = [];
+
+    for (key in links) {
+      linksList.push(
         <div className="ref-site">
-          <img src={link.iconPath} className={`icon ${link.className}`} />
-          <a className="site-link" target="_blank" href={link.linkUrl}>{link.linkName}</a>
+          <img src={`assets/images/${key}.png`} className={`icon ${key}`} />
+          <a className="site-link" target="_blank" href={links[key]}>{key}</a>
         </div>
       );
-    });
+    }
+
+    return linksList;
   }
 
   render () {

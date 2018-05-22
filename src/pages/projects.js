@@ -5,6 +5,21 @@ import Waypoint from './components/waypoint';
 
 class Projects extends React.Component {
 
+  renderProjectCards (projects) {
+    return projects.map((project) => {
+      return (
+        <div className="project-card">
+          <div className="project-title">
+            <a className="title-link" href={project.link} target="_blank">{project.title}</a>
+          </div>
+          <div className="description">
+            {project.descrription}
+          </div>
+        </div>
+      );
+    })
+  }
+
   render () {
     return (
       <div id="projects" className="projects-section">

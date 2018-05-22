@@ -6,10 +6,10 @@ import jump from 'jump.js';
 const WayPointWrapper = (props) => {
 	let handleWaypointEnter = () => {
     jump(props.selector, {
-      duration: 500
+      duration: 300
     });
 	};
-	
+
 	return <Waypoint onEnter={handleWaypointEnter} />;
 };
 

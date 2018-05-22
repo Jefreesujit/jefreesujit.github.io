@@ -5,6 +5,42 @@ import Waypoint from './components/waypoint';
 
 class TechSkills extends React.Component {
 
+  getBars (barCount) {
+    let className, i, barArray = [];
+
+    for (i = 0; i < 8; i ++) {
+      className = i < barCount ? 'bar' : 'bar empty';
+      barArray.push(<rect className={className} />);
+    }
+
+    return barArray;
+  }
+
+  renderSkillRows (skills) {
+    return skills.map((skill, index) => {
+      let init = 45, inc = 80;
+      return (
+        <g className="bar-chart">
+          <text className="skill" y={init + (inc * index)}>{skill.skillName}</text>
+          {this.getBars(skill.level)}
+        </g>
+      );
+    });
+  }
+
+  renderSkillCharts (skills) { // needs work
+    return skills.map((skill, index) => {
+      return (
+        <div className="pie-chart">
+          <svg className="chart-box">
+            <circle className="pie"/>
+          </svg>
+          <div className="skill">{skill.skillName}</div>
+        </div>
+      );
+    });
+  }
+
   render () {
     return (
       <div id="skills" className="skills-section">
