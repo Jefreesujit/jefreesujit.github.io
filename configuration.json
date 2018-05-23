@@ -4,41 +4,47 @@
     "profileImgLink": "assets/images/photo.png",
     "presentRole": "Front End Engineer",
     "presentCompany": "The Advisory Board Company",
-    "profileBio": "✪ Computer Science Graduate ✪ Lives in Chennai, India <br/> ✪ Passionate towards Web development ✪ JS Lover<br/> ✪ Anime Fan ✪ Marvel Freak ✪ Crypto Enthusiast ✪ Guitar Noob <br/>",
+    "profileBio": [
+      "✪ Computer Science Graduate ✪ Lives in Chennai, India",
+      "✪ Passionate towards Web development ✪ JS Lover",
+      "✪ Anime Fan ✪ Marvel Freak ✪ Crypto Enthusiast ✪ Guitar Noob"
+    ],
     "referenceLinks": {
       "github": "https://github.com/jefreesujit",
       "stackoverflow": "https://stackoverflow.com/users/2299439/jefree-sujit",
       "linkedin": "https://www.linkedin.com/in/jefreesujit"
     }
   },
-  "experience": [{
-    "jobTitle": "Front End Engineer",
-    "companyName": "The Advisory Board Company",
-    "fromDate": "Apr 2018",
-    "toDate": "Present",
-    "description": [
-      "Firm rooting the \"Console\" application with solid technology stacks, making it more modular and as a platform application to support for any framework to be built in",
-      "Enhancing the middle tier server to handle cross-application requests as a platform, with authentication and authorization and serving custom user role based features",
-      "Working on AWS migrating application to cloud, handling traffic with load balancing and autoscaling, improving performance and reducing cost"
-    ]
-  }, {
-    "jobTitle": "Associate Front End Engineer",
-    "companyName": "The Advisory Board Company",
-    "fromDate": "Jun 2016",
-    "toDate": "Mar 2018",
-    "description": [
-      "Building a Member Self-Service Application \"Console\", an Enterprise Level SPA with Material Inspired designs for user-friendly experience. ES6, React.js, Redux, SASS, Webpack",
-      "Building the Middle-Tier Server for WebApp, serving data requests from WebApp and authentication for requests from external sources. NPM, Node.js, Express.js"
-    ]
-  }, {
-    "jobTitle": "Engineering Intern",
-    "companyName": "The Advisory Board Company",
-    "fromDate": "Jan 2016",
-    "toDate": "May 2016",
-    "description": [
-      "Built an React based Configuration Management Web Application for Internal users to display metrics, monitor activity and configure settings"
-    ]
-  }],
+  "experience": {
+    "jobsList": [{
+      "jobTitle": "Front End Engineer",
+      "companyName": "The Advisory Board Company",
+      "fromDate": "Apr 2018",
+      "toDate": "Present",
+      "description": [
+        "Firm rooting the \"Console\" application with solid technology stacks, making it more modular and as a platform application to support for any framework to be built in",
+        "Enhancing the middle tier server to handle cross-application requests as a platform, with authentication and authorization and serving custom user role based features",
+        "Working on AWS migrating application to cloud, handling traffic with load balancing and autoscaling, improving performance and reducing cost"
+      ]
+    }, {
+      "jobTitle": "Associate Front End Engineer",
+      "companyName": "The Advisory Board Company",
+      "fromDate": "Jun 2016",
+      "toDate": "Mar 2018",
+      "description": [
+        "Building a Member Self-Service Application \"Console\", an Enterprise Level SPA with Material Inspired designs for user-friendly experience. ES6, React.js, Redux, SASS, Webpack",
+        "Building the Middle-Tier Server for WebApp, serving data requests from WebApp and authentication for requests from external sources. NPM, Node.js, Express.js"
+      ]
+    }, {
+      "jobTitle": "Engineering Intern",
+      "companyName": "The Advisory Board Company",
+      "fromDate": "Jan 2016",
+      "toDate": "May 2016",
+      "description": [
+        "Built an React based Configuration Management Web Application for Internal users to display metrics, monitor activity and configure settings"
+      ]
+    }]
+  },
   "skills": {
     "primary": [{
       "skillName": "ReactJS",
@@ -106,6 +112,6 @@
     "title": "That's it!",
     "caption": "Thanks for your time and patience :)",
     "message": "Wanna get in touch? ",
-    "contact": "jefree.sujit@gmail.com"
+    "email": "jefree.sujit@gmail.com"
   }
 }

@@ -11,12 +11,12 @@ class EndCard extends React.Component {
         <div className="end-card">
           <div className="endcard-title">
             <div className="title-group">
-              <div className="center-title"> That's It! </div>
-              <div className="caption"> Thanks for your time and patience :) </div>
+              <div className="center-title"> {this.props.title} </div>
+              <div className="caption"> {this.props.caption} </div>
             </div>
           </div>
           <div className="end-message">
-            Wanna get in touch? reach out to me at <a href="mailto:jefree.sujit@gmail.com">jefree.sujit@gmail.com</a> ;)
+          {this.props.message} reach out to me at <a href={`mailto:${this.props.email}`}>{this.props.email}</a> ;)
           </div>
         </div>
       </div>

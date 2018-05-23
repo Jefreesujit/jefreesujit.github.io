@@ -10,7 +10,7 @@ class TechSkills extends React.Component {
 
     for (i = 0; i < 8; i ++) {
       className = i < barCount ? 'bar' : 'bar empty';
-      barArray.push(<rect className={className} />);
+      barArray.push(<rect key={i} className={className} />);
     }
 
     return barArray;
@@ -20,7 +20,7 @@ class TechSkills extends React.Component {
     return skills.map((skill, index) => {
       let init = 45, inc = 80;
       return (
-        <g className="bar-chart">
+        <g key={index} className="bar-chart">
           <text className="skill" y={init + (inc * index)}>{skill.skillName}</text>
           {this.getBars(skill.level)}
         </g>
@@ -31,7 +31,7 @@ class TechSkills extends React.Component {
   renderSkillCharts (skills) { // needs work
     return skills.map((skill, index) => {
       return (
-        <div className="pie-chart">
+        <div key={index} className="pie-chart">
           <svg className="chart-box">
             <circle className="pie"/>
           </svg>
@@ -51,85 +51,13 @@ class TechSkills extends React.Component {
             <div className="section-title">Specialisation:</div>
             <svg className="chart" height="310" aria-labelledby="title desc" role="img">
               <desc id="desc">Specialised skillsets: ReactJs, Node.js, Python, Amazon Web Services</desc>
-              <g className="bar-chart">
-                <text className="skill" y="45">ReactJS</text>
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar empty" />
-              </g>
-              <g className="bar-chart">
-                <text className="skill" y="125">Node.js</text>
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar empty" />
-                <rect className="bar empty" />
-              </g>
-              <g className="bar-chart">
-                <text className="skill" y="205">Python</text>
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar empty" />
-                <rect className="bar empty" />
-              </g>
-              <g className="bar-chart">
-                <text className="skill" y="285">AWS</text>
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar" />
-                <rect className="bar empty" />
-                <rect className="bar empty" />
-                <rect className="bar empty" />
-              </g>
+              {this.renderSkillRows(this.props.primary)}
             </svg>
           </div>
           <div className="horizontal-list">
           <div className="section-title">Related Skills:</div>
             <div className="chart">
-              <div className="pie-chart">
-                <svg className="chart-box">
-                  <circle className="pie"/>
-                </svg>
-                <div className="skill">HTML 5</div>
-              </div>
-              <div className="pie-chart">
-                <svg className="chart-box">
-                  <circle className="pie"/>
-                </svg>
-                <div className="skill">CSS 3</div>
-              </div>
-              <div className="pie-chart">
-                <svg className="chart-box">
-                  <circle className="pie"/>
-                </svg>
-                <div className="skill">Sass</div>
-              </div>
-              <div className="pie-chart">
-                <svg className="chart-box">
-                  <circle className="pie"/>
-                </svg>
-                <div className="skill" >JQuery</div>
-              </div>
-              <div className="pie-chart">
-                <svg className="chart-box">
-                  <circle className="pie"/>
-                </svg>
-                <div className="skill" >Webpack</div>
-              </div>
+              {this.renderSkillCharts(this.props.secondary)}
             </div>
           </div>
         </div>

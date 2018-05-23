@@ -7,9 +7,9 @@ class IntroSection extends React.Component {
   renderRefLinks (links) {
     let linksList = [];
 
-    for (key in links) {
+    for (let key in links) {
       linksList.push(
-        <div className="ref-site">
+        <div key={key} className="ref-site">
           <img src={`assets/images/${key}.png`} className={`icon ${key}`} />
           <a className="site-link" target="_blank" href={links[key]}>{key}</a>
         </div>
@@ -27,30 +27,15 @@ class IntroSection extends React.Component {
           </div>
         </div>
         <div className="profile-section">
-          <img className="profile-icon" src="assets/images/photo.png" id="profileImg" />
+          <img className="profile-icon" src={this.props.profileImgLink} id="profileImg" />
         </div>
         <div className="basic-info">
-          <div className="profile-name"> Jefree Sujit</div>
-          <div className="designation"> Front End Engineer at The Advisory Board Company </div>
+          <div className="profile-name">{this.props.profileName}</div>
+          <div className="designation">{this.props.presentRole} at {this.props.presentCompany}  </div>
           <div className="profile-bio">
-            ✪ Computer Science Graduate ✪ Lives in Chennai, India <br/>
-            ✪ Passionate towards Web development ✪ JS Lover<br/>
-            ✪ Anime Fan ✪ Marvel Freak ✪ Crypto Enthusiast ✪ Guitar Noob <br/>
+            {this.props.profileBio.map(bio => <p>{bio}</p>)}
           </div>
-          <div className="ref-links">
-            <div className="ref-site">
-              <img src="assets/images/github.png" className="icon git" />
-              <a className="site-link" target="_blank" href="https://github.com/jefreesujit">Github</a>
-            </div>
-            <div className="ref-site">
-              <img src="assets/images/stackoverflow.png" className="icon stack" />
-              <a className="site-link" target="_blank" href="https://stackoverflow.com/users/2299439/jefree-sujit">Stack Overflow</a>
-            </div>
-            <div className="ref-site">
-              <img src="assets/images/linkedin.png" className="icon linkedin" />
-              <a className="site-link" target="_blank" href="https://www.linkedin.com/in/jefreesujit">LinkedIn</a>
-            </div>
-          </div>
+          {this.renderRefLinks(this.props.referenceLinks)}
         </div>
       </div>
     );
