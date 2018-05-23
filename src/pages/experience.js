@@ -7,7 +7,7 @@ class Experience extends React.Component {
 
   getDescText (textList) {
     return textList.each((text) => {
-      return <p className="desc-text">{text}</p> ;
+      return <p className="desc-text">• {text}</p> ;
     });
   }
 
