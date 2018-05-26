@@ -188,7 +188,7 @@ footer {
           @for $i from 1 through 5 {
             &:nth-child(#{$i}) {
               .bar {
-                y: calc(10 + ((#{$i} - 2) * 80));
+                y: calc(10 + ((#{$i} - 1) * 80));
               }
             }
           }
