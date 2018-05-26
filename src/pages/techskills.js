@@ -27,7 +27,7 @@ const TechSkills = (props) => {
         return skills.map((skill, index) => {
           return (
             <div key={index} className="pie-chart">
-              <svg className="chart-box">
+              <svg className={`chart-box level-${skill.level}`}>
                 <circle className="pie"/>
               </svg>
               <div className="skill">{skill.skillName}</div>
@@ -44,7 +44,6 @@ const TechSkills = (props) => {
         <div className="vertical-list">
           <div className="section-title">Specialisation:</div>
           <svg className="chart" height="310" aria-labelledby="title desc" role="img">
-            <desc id="desc">Specialised skillsets: ReactJs, Node.js, Python, Amazon Web Services</desc>
             {renderSkillRows(props.primary)}
           </svg>
         </div>

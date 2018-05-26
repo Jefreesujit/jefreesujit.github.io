@@ -1,7 +1,7 @@
 {
-  "name": "jefreesujit.github.io",
+  "name": "react-portfolio",
   "version": "1.0.0",
-  "description": "Jefreesujit Portfolio",
+  "description": "A React based Portfolio Generator",
   "author": "Jefree Sujit <e.jefree110@gmail.com>",
   "main": "src/index.js",
   "repository": {

@@ -25,7 +25,7 @@ footer {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: $primary-gray;
   text-align: center;
   z-index: 100;
 }
@@ -109,7 +109,7 @@ footer {
 
 .section-heading {
 	letter-spacing: 1px;
-	background: #26a69a;
+	background: $primary-green;
 	box-shadow: 0px 2px 6px 0px grey;
 	font-size: 36px;
 	font-weight: bold;
@@ -197,8 +197,6 @@ footer {
     }
 
     .horizontal-list {
-      $pie-values: 60 120 120 120 180;
-
       .chart {
         padding-top: 10px;
         display: flex;
@@ -210,7 +208,7 @@ footer {
         .chart-box {
           width: 150px;
           height: 150px;
-          transform: rotate(-90deg);
+          transform: rotate(-90deg) scaleY(-1);
           border-radius: 50%;
         }
 
@@ -223,11 +221,9 @@ footer {
           stroke: $primary-gray;
         }
 
-        @for $i from 1 through length($pie-values) {
-          &:nth-child(#{$i}) {
-            .pie {
-              stroke-dasharray: nth($pie-values, $i) 450;
-            }
+        @for $i from 0 through 8 {
+          .level-#{8 - $i} {
+            stroke-dasharray: calc(#{$i} * 60) 450;
           }
         }
       }
@@ -235,7 +231,7 @@ footer {
 	}
 
 	.section-title {
-		color: #26a69a;
+		color: $primary-green;
 		font-size: 26px;
 		font-weight: 900;
 		margin: 20px 0px;
@@ -257,7 +253,7 @@ footer {
     padding: 30px 5%;
 
     .section-title {
-      color: #26a69a;
+      color: $primary-green;
       font-size: 26px;
       font-weight: 900;
       margin: 20px 0px;
@@ -277,7 +273,7 @@ footer {
 
         .project-title {
           font-size: 24px;
-          color: #26a69a;
+          color: $primary-green;
           border-bottom: 1px solid;
           margin: 15px 20px;
         }
