@@ -21,6 +21,10 @@ const IntroSection = (props) => {
   return (
     <div id="intro" className="intro-section">
       <div className="nav-section">
+        <div className="change-theme">
+          <label htmlFor="colorPicker">Change Theme</label>
+          <input id="colorPicker" className="color-picker" type="color" value={props.defaultColor} onChange={props.handleColorPick} />
+        </div>
         <div className="nav-links">
         </div>
       </div>
