@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import Waypoint from './components/waypoint';
 
 const IntroSection = (props) => {
   let renderRefLinks = (links) => {
@@ -16,6 +17,15 @@ const IntroSection = (props) => {
     }
 
     return linksList;
+  },
+  scrollToTop = () => {
+    if (window.scrollY > 50) {
+      return (
+        <div className="scroll-top">
+          <a className="scroll-top-link" title="Back to top" href="#">&#10148;</a>
+        </div>
+      )
+    }
   }
 
   return (
@@ -26,11 +36,15 @@ const IntroSection = (props) => {
           <input id="colorPicker" className="color-picker" type="color" value={props.defaultColor} onChange={props.handleColorPick} />
         </div>
         <div className="nav-links">
+          <a className="link" href="#experience">Experience</a>
+          <a className="link" href="#skills">Skills</a>
+          <a className="link" href="#projects">Projects</a>
         </div>
       </div>
       <div className="profile-section">
         <img className="profile-icon" src={props.profileImgLink} id="profileImg" />
       </div>
+      <Waypoint selector="" />
       <div className="basic-info">
         <div className="profile-name">{props.profileName}</div>
         <div className="designation">{props.presentRole} at {props.presentCompany}  </div>
@@ -38,6 +52,7 @@ const IntroSection = (props) => {
           {props.profileBio.map(bio => <p>{bio}</p>)}
         </div>
         {renderRefLinks(props.referenceLinks)}
+        {scrollToTop()}
       </div>
     </div>
   );
