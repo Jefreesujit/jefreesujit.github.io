@@ -1,7 +1,7 @@
 {
-  "name": "react-portfolio",
+  "name": "jefree-portfolio",
   "version": "1.0.0",
-  "description": "A React based Portfolio Generator",
+  "description": "A React based Portfolio Generator application",
   "author": "Jefree Sujit <e.jefree110@gmail.com>",
   "main": "src/index.js",
   "repository": {
@@ -49,7 +49,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "npm-run-all build:js build:css",
-    "build:js": "NODE_ENV=development webpack --progress --color --watch",
+    "build:js": "NODE_ENV=development webpack --progress --color",
     "build:css": "node-sass src/sass/index.scss assets/index.build.css --importer node_modules/node-sass-import",
     "build:html": "vulcanize --inline-scripts --inline-css assets/template.html > index.min.html",
     "postversion": "git push --tags origin HEAD",
