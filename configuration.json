@@ -1,0 +1,118 @@
+{
+  "themeColor": "#26a69a",
+  "introduction": {
+    "profileName": "Jefree Sujit",
+    "profileImgLink": "assets/images/photo.png",
+    "presentRole": "Front End Engineer",
+    "presentCompany": "The Advisory Board Company",
+    "profileBio": [
+      "✪ Computer Science Graduate ✪ Lives in Chennai, India",
+      "✪ Passionate towards Web development ✪ JS Lover",
+      "✪ Anime Fan ✪ Marvel Freak ✪ Crypto Enthusiast ✪ Guitar Noob"
+    ],
+    "referenceLinks": {
+      "github": "https://github.com/jefreesujit",
+      "stackoverflow": "https://stackoverflow.com/users/2299439/jefree-sujit",
+      "linkedin": "https://www.linkedin.com/in/jefreesujit"
+    }
+  },
+  "experience": {
+    "jobsList": [{
+      "jobTitle": "Front End Engineer",
+      "companyName": "The Advisory Board Company",
+      "fromDate": "Apr 2018",
+      "toDate": "Present",
+      "description": [
+        "Firm rooting the \"Console\" application with solid technology stacks, making it more modular and as a platform application to support for any framework to be built in",
+        "Enhancing the middle tier server to handle cross-application requests as a platform, with authentication and authorization and serving custom user role based features",
+        "Working on AWS migrating application to cloud, handling traffic with load balancing and autoscaling, improving performance and reducing cost"
+      ]
+    }, {
+      "jobTitle": "Associate Front End Engineer",
+      "companyName": "The Advisory Board Company",
+      "fromDate": "Jun 2016",
+      "toDate": "Mar 2018",
+      "description": [
+        "Building a Member Self-Service Application \"Console\", an Enterprise Level SPA with Material Inspired designs for user-friendly experience. ES6, React.js, Redux, SASS, Webpack",
+        "Building the Middle-Tier Server for WebApp, serving data requests from WebApp and authentication for requests from external sources. NPM, Node.js, Express.js"
+      ]
+    }, {
+      "jobTitle": "Engineering Intern",
+      "companyName": "The Advisory Board Company",
+      "fromDate": "Jan 2016",
+      "toDate": "May 2016",
+      "description": [
+        "Built an React based Configuration Management Web Application for Internal users to display metrics, monitor activity and configure settings"
+      ]
+    }]
+  },
+  "skills": {
+    "primary": [{
+      "skillName": "ReactJS",
+      "level": 7
+    }, {
+      "skillName": "Node.js",
+      "level": 6
+    }, {
+      "skillName": "Python",
+      "level": 6
+    }, {
+      "skillName": "AWS",
+      "level": 5
+    }],
+    "secondary": [{
+      "skillName": "HTML 5",
+      "level": 7
+    }, {
+      "skillName": "CSS 3",
+      "level": 6
+    }, {
+      "skillName": "Sass",
+      "level": 6
+    }, {
+      "skillName": "JQuery",
+      "level": 6
+    }, {
+      "skillName": "Webpack",
+      "level": 5
+    }]
+  },
+  "projects": {
+    "personal": [{
+      "title": "Easy Miner",
+      "link": "/easyminer",
+      "description": "An application that allows users to mine cryptocurrencies in mining pools directly from browser. The user can connect to which ever mining pool the user wants, with no external setup and with minimal configuration"
+    }, {
+      "title": "DriveIt",
+      "link": "https://driveit.us-west-2.elasticbeanstalk.com",
+      "description": "Drive It is a cloud-based web application, that allows you to store, retrieve and manage files over the cloud. It is absolutely free to use, at no cost limit and with no storage limit. Drive It is powered by Node.js and Amazon Web Services (AWS)"
+    }, {
+      "title": "Chatter Box",
+      "link": "https://mychatterbox.herokuapp.com",
+      "description": "An simple chat application that allows you to create rooms and chat in groups. Node based application built using Express.js server. Designed with Material Concept and uses Socket.io for message transfer"
+    }, {
+      "title": "Birthday Tracker",
+      "link": "/birthdaytracker/public",
+      "description": "An App to keep track of Birthday list. Designed with Material Concept, uses Google Sign-in for Authentication and Google Firebase for storage"
+    }, {
+      "title": "AnyZip",
+      "link": "/anyzip",
+      "description": "An online ZIP converter that lets you easily compress your files to the ZIP format. You can upload any number of files, any type of files and our converter will compress it for you."
+    }],
+    "university": [{
+      "title": "Member Self-Service Tool",
+      "link": "",
+      "description": "Contributed in building a Web Application that would assess data readiness, collect the data needed for any products engagement, and prepare the data for use across all products."
+    }, {
+      "title": "Cypher It",
+      "link": "",
+      "description": "Simulated a real-time “Cryptography” project that involves end-to-end encrypted chat option and encrypted file transfer which uses custom algorithms to withstand attacks and secured with user identity authentication on both ends."
+    }]
+  },
+  "endCard": {
+    "title": "That's it!",
+    "caption": "Thanks for your time and patience :)",
+    "message": "Wanna get in touch? ",
+    "email": "jefree.sujit@gmail.com"
+  }
+}
