@@ -27,7 +27,7 @@ const Experience = (props) => {
   return (
     <div id="experience" className="exp-section">
       <div className="section-heading experience">Experience</div>
-      <Waypoint selector=".experience" />
+      <Waypoint selector="experience" />
       <div className="job-section">
         {renderExperienceCard(props.jobsList)}
       </div>

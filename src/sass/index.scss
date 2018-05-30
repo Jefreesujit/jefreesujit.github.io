@@ -15,6 +15,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: rgba(0,0,0,0.87);
+  scroll-behavior: smooth;
 }
 body {
 	margin: 0;
@@ -52,16 +53,26 @@ footer {
 }
 .intro-section {
   .nav-section {
-    height: 280px;
+    height: 250px;
     background: var(--themeColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+    .link {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: lighter;
+    }
 
     .change-theme {
-      padding: 20px 30px;
-
       label {
         color: white;
         font-size: 18px;
         cursor: pointer;
+        font-weight: lighter;
       }
       .color-picker {
         visibility: hidden;
@@ -117,6 +128,20 @@ footer {
 
   .optum-logo {
     width: 130px;
+  }
+  .scroll-top-link {
+    position: fixed;
+    top: 90vh;
+    right: 50px;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: white;
+    background: #26a69a;
+    width: 25px;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px grey;
+    z-index: 100;
   }
 }
 

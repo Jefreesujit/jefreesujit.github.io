@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Waypoint from 'react-waypoint';
-import jump from 'jump.js';
+import { withRouter } from 'react-router-dom';
 
 const WayPointWrapper = (props) => {
 	let handleWaypointEnter = () => {
-    jump(props.selector, {
-      duration: 300
-    });
-	};
+    props.history.push(`/#${props.selector}`);
+  }
 
-	return <Waypoint onEnter={handleWaypointEnter} />;
+  return <Waypoint onEnter={handleWaypointEnter} />;
 };
 
 WayPointWrapper.displayName = 'WayPointWrapper';
@@ -19,4 +17,4 @@ WayPointWrapper.propTypes = {
   selector: PropTypes.string
 };
 
-export default WayPointWrapper;
+export default withRouter(WayPointWrapper);

@@ -6,7 +6,7 @@ import Waypoint from './components/waypoint';
 const EndCard = (props) => {
   return (
     <div id="endcard" className="end-section" >
-      <Waypoint selector=".end-card" />
+      <Waypoint selector="endcard" />
       <div className="end-card">
         <div className="endcard-title">
           <div className="title-group">

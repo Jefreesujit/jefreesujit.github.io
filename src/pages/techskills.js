@@ -39,7 +39,7 @@ const TechSkills = (props) => {
   return (
     <div id="skills" className="skills-section">
       <div className="section-heading skills">Tech Skills</div>
-      <Waypoint selector=".skills" />
+      <Waypoint selector="skills"/>
       <div className="graph-section">
         <div className="vertical-list">
           <div className="section-title">Specialisation:</div>
