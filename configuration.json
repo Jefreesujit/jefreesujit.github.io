@@ -79,34 +79,38 @@
   },
   "projects": {
     "personal": [{
-      "title": "Easy Miner",
-      "link": "/easyminer",
-      "description": "An application that allows users to mine cryptocurrencies in mining pools directly from browser. The user can connect to which ever mining pool the user wants, with no external setup and with minimal configuration"
-    }, {
-      "title": "DriveIt",
-      "link": "https://driveit.us-west-2.elasticbeanstalk.com",
-      "description": "Drive It is a cloud-based web application, that allows you to store, retrieve and manage files over the cloud. It is absolutely free to use, at no cost limit and with no storage limit. Drive It is powered by Node.js and Amazon Web Services (AWS)"
-    }, {
-      "title": "Chatter Box",
-      "link": "https://mychatterbox.herokuapp.com",
-      "description": "An simple chat application that allows you to create rooms and chat in groups. Node based application built using Express.js server. Designed with Material Concept and uses Socket.io for message transfer"
+      "title": "AnyZip",
+      "link": "/anyzip",
+      "description": "An online ZIP converter that lets you easily compress your files to the ZIP format. You can upload any number of files, any type of files and our converter will compress it for you."
     }, {
       "title": "Birthday Tracker",
       "link": "/birthdaytracker/public",
       "description": "An App to keep track of Birthday list. Designed with Material Concept, uses Google Sign-in for Authentication and Google Firebase for storage"
     }, {
-      "title": "AnyZip",
-      "link": "/anyzip",
-      "description": "An online ZIP converter that lets you easily compress your files to the ZIP format. You can upload any number of files, any type of files and our converter will compress it for you."
+      "title": "Chatter Box",
+      "link": "https://mychatterbox.herokuapp.com",
+      "description": "An simple chat application that allows you to create rooms and chat in groups. Node based application built using Express.js server. Designed with Material Concept and uses Socket.io for message transfer"
+    }, {
+      "title": "DriveIt",
+      "link": "https://driveit.us-west-2.elasticbeanstalk.com",
+      "description": "Drive It is a cloud-based web application, that allows you to store, retrieve and manage files over the cloud. It is absolutely free to use, at no cost limit and with no storage limit. Drive It is powered by Node.js and Amazon Web Services (AWS)"
+    }, {
+      "title": "Easy Miner",
+      "link": "/easyminer",
+      "description": "An application that allows users to mine cryptocurrencies in mining pools directly from browser. The user can connect to which ever mining pool the user wants, with no external setup and with minimal configuration"
+    }, {
+      "title": "Face Detect",
+      "link": "https://facedetect.netlify.com/",
+      "description": "An experiment over google chrome's face detection api. Just try some images with faces or try your own face in the live camera, the app would identify the faces and draws boxes over it!"
     }],
     "university": [{
-      "title": "Member Self-Service Tool",
-      "link": "",
-      "description": "Contributed in building a Web Application that would assess data readiness, collect the data needed for any products engagement, and prepare the data for use across all products."
-    }, {
       "title": "Cypher It",
       "link": "",
       "description": "Simulated a real-time “Cryptography” project that involves end-to-end encrypted chat option and encrypted file transfer which uses custom algorithms to withstand attacks and secured with user identity authentication on both ends."
+    }, {
+      "title": "Member Self-Service Tool",
+      "link": "",
+      "description": "Contributed in building a Web Application that would assess data readiness, collect the data needed for any products engagement, and prepare the data for use across all products."
     }]
   },
   "endCard": {
