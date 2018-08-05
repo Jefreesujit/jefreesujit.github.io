@@ -13,11 +13,9 @@
   ],
   "dependencies": {
     "axios": "^0.17.0",
-    "debounce": "^1.1.0",
-    "jump.js": "^1.0.2",
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0",
-    "react-router-dom": "^4.2.2",
+    "react": "15.0.0",
+    "react-dom": "15.0.0",
+    "react-router-dom": "4.2.2",
     "react-waypoint": "^8.0.1"
   },
   "devDependencies": {
@@ -42,14 +40,14 @@
     "node-sass": "^3.4.2",
     "node-sass-import": "^1.0.0",
     "npm-run-all": "^1.5.1",
-    "react-addons-test-utils": "^0.14.0 || ^15.0.0",
+    "react-addons-test-utils": "^15.0.0",
     "vulcanize": "^1.14.8",
     "webpack": "^2.7.0"
   },
   "scripts": {
     "start": "node index.js",
     "build": "npm-run-all build:js build:css",
-    "build:js": "NODE_ENV=development webpack --progress --color",
+    "build:js": "cross-env NODE_ENV=development webpack --progress --color",
     "build:css": "node-sass src/sass/index.scss assets/index.build.css --importer node_modules/node-sass-import",
     "build:html": "vulcanize --inline-scripts --inline-css assets/template.html > index.min.html",
     "postversion": "git push --tags origin HEAD",

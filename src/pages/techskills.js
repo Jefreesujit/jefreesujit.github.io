@@ -4,7 +4,9 @@ import React from 'react';
 import Waypoint from './components/waypoint';
 
 const TechSkills = (props) => {
-  let getBars = (barCount) => {
+  let increment = screen.width > 480 ? 80 : 110,
+      chartHeight = increment * props.primary.length,
+      getBars = (barCount) => {
         let className, i, barArray = [];
         for (i = 0; i < 8; i ++) {
           className = i < barCount ? 'bar' : 'bar empty';
@@ -14,10 +16,10 @@ const TechSkills = (props) => {
       },
       renderSkillRows = (skills) => {
         return skills.map((skill, index) => {
-          let init = 45, inc = 80;
+          let init = 25;
           return (
             <g key={index} className="bar-chart">
-              <text className="skill" y={init + (inc * index)}>{skill.skillName}</text>
+              <text className="skill" y={init + (increment * index)}>{skill.skillName}</text>
               {getBars(skill.level)}
             </g>
           );
@@ -43,7 +45,7 @@ const TechSkills = (props) => {
       <div className="graph-section">
         <div className="vertical-list">
           <div className="section-title">Specialisation:</div>
-          <svg className="chart" height="310" aria-labelledby="title desc" role="img">
+          <svg className="chart" height={chartHeight} aria-labelledby="title desc" role="img">
             {renderSkillRows(props.primary)}
           </svg>
         </div>

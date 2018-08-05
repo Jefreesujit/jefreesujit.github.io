@@ -93,7 +93,7 @@ footer {
     border: 5px solid white;
   }
   .basic-info {
-    margin: auto;
+    margin: auto 20px;
     text-align: center;
   }
   .profile-name {
@@ -242,6 +242,7 @@ footer {
       .chart {
         padding-top: 10px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         // filter: drop-shadow( 5px 5px 5px gray);
       }
@@ -308,7 +309,7 @@ footer {
 
       .project-card {
         width: 350px;
-        height: 250px;
+        min-height: 250px;
         margin: 20px;
         box-shadow: 0px 2px 6px 0px grey;
         border-radius: 2px;
@@ -341,7 +342,7 @@ footer {
     height: 50vh;
 
     .title-group {
-      transform: translateY(100%);
+      transform: translateY(100px);
 
       .center-title {
         font-size: 84px;
@@ -359,13 +360,57 @@ footer {
 
   .end-message {
     text-align: center;
-    margin: 100px;
+    margin: 10%;
     font-size: 32px;
     color: $secondary-black;
 
     a {
       color: var(--themeColor);
       text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-section {
+    .graph-section {
+      .vertical-list {
+        .chart {
+          .bar-chart {
+            .bar {
+              width: 11%;
+        
+              @for $i from 1 through 9 {
+                &:nth-child(#{$i}) {
+                  x: calc((12.5% * (#{$i} - 1)) - 12.5%);
+                }
+              }
+            }
+
+            @for $i from 1 through 5 {
+              &:nth-child(#{$i}) {
+                .bar {
+                  y: calc(40 + ((#{$i} - 1) * 110));
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .end-section {
+    .endcard-title {
+      .title-group {
+        .center-title {
+          font-size: 64px;
+        }
+      }
+    }
+
+    .end-message {
+      margin-top: 20%;
     }
   }
 }
