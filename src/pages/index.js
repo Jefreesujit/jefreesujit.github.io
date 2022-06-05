@@ -9,13 +9,21 @@ import EndSection from './endcard';
 import Config from '../../configuration.json';
 
 class Home extends React.Component {
+  constructor() {
+    super();
+
+    this.updateThemeColor = this.updateThemeColor.bind(this);
+    this.exclusionList = ['c', 'd', 'e', 'f'];
+  }
+
   componentWillMount () {
     document.documentElement.style.setProperty('--themeColor', Config.themeColor);
   }
 
   updateThemeColor (event) {
     console.log(event.target.value);
-    document.documentElement.style.setProperty('--themeColor', event.target.value);
+    if (event.target.value && !this.exclusionList.includes(event.target.value[1]))
+      document.documentElement.style.setProperty('--themeColor', event.target.value);
   }
 
   render () {

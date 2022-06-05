@@ -47,7 +47,7 @@ const IntroSection = (props) => {
       <Waypoint selector="" />
       <div className="basic-info">
         <div className="profile-name">{props.profileName}</div>
-        <div className="designation">{props.presentRole} at {props.presentCompany}  </div>
+        <div className="designation">{props.presentRole} at <a className="link" target="_blank" href={props.companyUrl}>{props.presentCompany}</a></div>
         <div className="profile-bio">
           {props.profileBio.map(bio => <p>{bio}</p>)}
         </div>

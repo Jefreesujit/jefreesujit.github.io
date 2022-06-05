@@ -63,16 +63,44 @@ footer {
       color: white;
       text-decoration: none;
       padding: 10px;
-      font-size: 18px;
-      font-weight: lighter;
+      font-size: 20px;
+      // font-weight: lighter;
     }
 
     .change-theme {
       label {
+        position: relative;
         color: white;
-        font-size: 18px;
         cursor: pointer;
+        z-index: 0;
+        font-size: 18px;
+        padding: 8px 16px;
         font-weight: lighter;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0px;
+          left: 0;
+          right: 0;
+          z-index: -1;
+          height: 100%;
+          width: 100%;
+          transform: scale(0.9) translateZ(0);
+          filter: blur(15px);
+          background: linear-gradient(to left,
+              #ff5770,
+              #e4428d,
+              #c42da8,
+              #9e16c3,
+              #6501de,
+              #9e16c3,
+              #c42da8,
+              #e4428d,
+              #ff5770);
+          background-size: 200% 200%;
+          animation: animateGlow 1.25s linear infinite;
+        }
       }
       .color-picker {
         visibility: hidden;
@@ -105,6 +133,11 @@ footer {
   .designation {
     font-size: 26px;
     color: $secondary-black;
+
+    .link {
+      text-decoration: none;
+      color: var(--themeColor);
+    }
   }
   .profile-bio {
     margin: 30px 0px 10px;
@@ -214,19 +247,19 @@ footer {
             width: 10%;
             height: 50px;
             fill: var(--themeColor);
-      
+
             &.empty {
               fill: $primary-gray;
               border: 1px solid var(--themeColor);
             }
-      
+
             @for $i from 1 through 9 {
               &:nth-child(#{$i}) {
                 x: calc(11% * (#{$i} - 1));
               }
             }
           }
-      
+
           @for $i from 1 through 5 {
             &:nth-child(#{$i}) {
               .bar {
@@ -379,7 +412,7 @@ footer {
           .bar-chart {
             .bar {
               width: 11%;
-        
+
               @for $i from 1 through 9 {
                 &:nth-child(#{$i}) {
                   x: calc((12.5% * (#{$i} - 1)) - 12.5%);
@@ -412,5 +445,15 @@ footer {
     .end-message {
       margin-top: 20%;
     }
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 200% 50%;
   }
 }

@@ -1,27 +1,51 @@
 {
   "themeColor": "#26a69a",
   "introduction": {
-    "profileName": "Jefree Sujit",
+    "profileName": "Jefree Sujit E",
     "profileImgLink": "assets/images/photo.png",
-    "presentRole": "Front End Engineer",
-    "presentCompany": "The Advisory Board Company",
+    "presentRole": "Lead Software Engineer",
+    "presentCompany": "Memorang Inc.",
+    "companyUrl": "https://memorang.com",
     "profileBio": [
       "✪ Computer Science Graduate ✪ Lives in Chennai, India",
-      "✪ Passionate towards Web development ✪ JS Lover",
-      "✪ Anime Fan ✪ Marvel Freak ✪ Crypto Enthusiast ✪ Guitar Noob"
+      "✪ Web developer ✪ JS Lover ✪ Crypto Enthusiast",
+      "✪ Anime Fan ✪ Marvel Freak ✪ Guitar Noob"
     ],
     "referenceLinks": {
       "github": "https://github.com/jefreesujit",
       "stackoverflow": "https://stackoverflow.com/users/2299439/jefree-sujit",
-      "linkedin": "https://www.linkedin.com/in/jefreesujit"
+      "linkedin": "https://www.linkedin.com/in/jefreesujit",
+      "npm": "https://www.npmjs.com/~jefreesujit",
+      "openuserjs": "https://openuserjs.org/users/Jefreesujit/scripts"
     }
   },
   "experience": {
     "jobsList": [{
+      "jobTitle": "Lead Software Engineer",
+      "companyName": "Memorang Labs",
+      "fromDate": "Jan 2021",
+      "toDate": "Present",
+      "description": [
+        "Building modular and high performant white labeled apps for partners using React, React Native and Typescript",
+        "Design a scalable multi tenant backend architecture which serves multiple partner apps with a single database.",
+        "Build a highly performant event driven micro service architecture, designed to handle heavy loads."
+      ]
+    }, {
+      "jobTitle": "Senior Software Engineer",
+      "companyName": "Memorang Labs",
+      "fromDate": "Jul 2019",
+      "toDate": "Jan 2021",
+      "description": [
+        "Creating an highly scalable serverless infrastructure with Node.js and GraphQL using AppSync, API Gateway and Lambda",
+        "Implemented the end-to-end payment setup from Web UI to Backend to integrating with external services. Experience in working with Stripe payments and In-app purchase integration for mobile devices.",
+        "Developing a modular and high performant web and mobile application using React.js and React Native",
+        "Built an in-house customized Graph Database over AWS DynamoDB"
+      ]
+    }, {
       "jobTitle": "Front End Engineer",
       "companyName": "The Advisory Board Company",
       "fromDate": "Apr 2018",
-      "toDate": "Present",
+      "toDate": "Jul 2019",
       "description": [
         "Firm rooting the \"Console\" application with solid technology stacks, making it more modular and as a platform application to support for any framework to be built in",
         "Enhancing the middle tier server to handle cross-application requests as a platform, with authentication and authorization and serving custom user role based features",
@@ -52,28 +76,28 @@
       "level": 7
     }, {
       "skillName": "Node.js",
+      "level": 7
+    }, {
+      "skillName": "AWS",
       "level": 6
     }, {
       "skillName": "Python",
       "level": 6
-    }, {
-      "skillName": "AWS",
-      "level": 5
     }],
     "secondary": [{
-      "skillName": "HTML 5",
+      "skillName": "GraphQL",
       "level": 7
     }, {
-      "skillName": "CSS 3",
+      "skillName": "Serverless",
+      "level": 7
+    }, {
+      "skillName": "React Native",
       "level": 6
     }, {
-      "skillName": "Sass",
+      "skillName": "TypeScript",
       "level": 6
     }, {
-      "skillName": "JQuery",
-      "level": 6
-    }, {
-      "skillName": "Webpack",
+      "skillName": "Angular",
       "level": 5
     }]
   },
@@ -102,6 +126,14 @@
       "title": "Face Detect",
       "link": "https://facedetect.netlify.com/",
       "description": "An experiment over google chrome's face detection api. Just try some images with faces or try your own face in the live camera, the app would identify the faces and draws boxes over it!"
+    }, {
+      "title": "Hurl",
+      "link": "https://hurl.vercel.app/",
+      "description": "Hurl is a free tool to shorten links and URLs. Its totally free to use with unlimited shortening of URLs and Strictly no ADs. It also provides an API service to generate shortened URLs programatically for free as well!"
+    }, {
+      "title": "Learnings Today",
+      "link": "https://play.google.com/store/apps/details?id=com.app.learningstoday",
+      "description": "Learnings Today is a simple learnings tracker app that enables you to note down your everyday learnings and helps you to manage them. It also provides a personalised learning timeline for you where you can revisit your learnings and recall them"
     }],
     "university": [{
       "title": "Cypher It",
@@ -117,6 +149,6 @@
     "title": "That's it!",
     "caption": "Thanks for your time and patience :)",
     "message": "Wanna get in touch? ",
-    "email": "jefree.sujit@gmail.com"
+    "email": "jefreesujit@gmail.com"
   }
 }
