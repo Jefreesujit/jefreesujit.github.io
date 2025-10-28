@@ -37,7 +37,7 @@
     "envify": "^1.2.1",
     "envify-loader": "^0.1.0",
     "gaze-cli": "^0.2.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "^9.0.0",
     "node-sass-import": "^1.0.0",
     "npm-run-all": "^1.5.1",
     "react-addons-test-utils": "^15.0.0",
