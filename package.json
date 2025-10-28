@@ -12,7 +12,7 @@
     "jefreesujit, jefree sujit, github, jefreesujit.github.io"
   ],
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^0.30.2",
     "react": "15.0.0",
     "react-dom": "15.0.0",
     "react-router-dom": "4.2.2",
