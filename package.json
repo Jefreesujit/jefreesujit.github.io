@@ -22,7 +22,7 @@
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^6.4.1",
+    "babel-loader": "^10.0.0",
     "babel-plugin-istanbul": "^1.1.0",
     "babel-plugin-react-transform": "^2.0.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -42,7 +42,7 @@
     "npm-run-all": "^1.8.0",
     "react-addons-test-utils": "^15.6.2",
     "vulcanize": "^1.16.0",
-    "webpack": "^2.7.0"
+    "webpack": "^5.102.1"
   },
   "scripts": {
     "start": "node index.js",
