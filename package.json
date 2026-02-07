@@ -42,7 +42,7 @@
     "npm-run-all": "^1.8.0",
     "react-addons-test-utils": "^15.6.2",
     "vulcanize": "^1.16.0",
-    "webpack": "^5.102.1"
+    "webpack": "^5.105.0"
   },
   "scripts": {
     "start": "node index.js",
